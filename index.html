@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zapisz się na szkolenie</title>
+</head>
+<body>
+    <form action="https://formspree.io/mdokwodq" method="POST">
+<br> 
+    <label for="name">Imię</label>
+    <input type="text" name="imie" id="name">
+<br>
+    <label for="surname">Nazwisko</label>
+    <input type="text" name="nazwisko" id="surname">
+<br>
+    <label for="email">Adres email</label>
+    <input type="email" name="mail" id="email">
+<br>
+    <label for="phone">Numer telefonu</label>
+    <input type="number" name="telefon" id="phone">
+<br>
+    <label for="city">Wybierz miasto, w którym odbędzie się szkolenie</label>
+    <select name="miasto" id="city">
+        <option value="krakow">Kraków</option>
+        <option value="warszawa">Warszawa</option>
+        <option value="gdansk">Gdańsk</option>
+    </select>
+<br>
+    Płeć
+    <input type="radio" name="plec" id="f" value="kobieta"><label for="f">Kobieta</label>    
+    <input type="radio" name="plec" id="m" value="mezczyzna"><label for="m">Mężczyzna</label>
+    
+<br>
+    <input type="checkbox" name="zgoda" id="agree" value="tak">
+    <label for="agree">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+<br>
+    <label for="additional-info">Czy chcesz nam powiedzieć coś jeszcze?</label><br>
+    <textarea name="wiadomosc" id="additional-info" maxlength="2000" cols="30" rows="10"></textarea>
+<br>
+    <input type="submit">
+    
+</form>
+</body>
+</html>
